@@ -1,0 +1,6 @@
+{
+  "brand": "Followproof",
+  "endpoint": "https://followproof.com/mcp",
+  "version": "1.0.0",
+  "scope": "followproof"
+}

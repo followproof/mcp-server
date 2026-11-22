@@ -1,0 +1,32 @@
+{
+  "manifest_version": "0.3",
+  "name": "followproof",
+  "display_name": "Followproof",
+  "version": "1.0.0",
+  "description": "MCP connector for Followproof: check whether an Instagram, TikTok or YouTube creator's audience is real, compare creators and find new ones by niche.",
+  "long_description": "Vet influencers before you pay them. check_creator gives an audience quality score with the signals behind it, engagement against same-size accounts, posting cadence and an estimated sponsored-post rate. get_creator_report adds peers, sponsored posts and earnings; compare_creators puts finalists side by side; search_creators finds creators by niche, size and country; saved lists keep your shortlist. Everything uses your Followproof plan's allowance.",
+  "author": {
+    "name": "Followproof",
+    "url": "https://followproof.com"
+  },
+  "homepage": "https://followproof.com/developers/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/followproof/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"]
+    }
+  },
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": { "node": ">=22" }
+  },
+  "privacy_policies": ["https://followproof.com/privacy/"],
+  "license": "MIT"
+}

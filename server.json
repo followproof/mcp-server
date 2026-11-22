@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.followproof/mcp-server",
+  "description": "Followproof MCP: check if a creator's audience is real, compare creators, find them by niche.",
+  "repository": {
+    "url": "https://github.com/followproof/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "followproof-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" }
+    }
+  ],
+  "remotes": [
+    { "type": "streamable-http", "url": "https://followproof.com/mcp" }
+  ]
+}
