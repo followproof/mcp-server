@@ -1,0 +1,42 @@
+{
+  "name": "followproof-mcp",
+  "version": "1.0.0",
+  "description": "Influencer audit and vetting: MCP connector for Followproof. Check audience quality and engagement rate for Instagram, TikTok and YouTube creators, compare creators and find new ones by niche.",
+  "type": "module",
+  "bin": {
+    "followproof-mcp": "server/index.js"
+  },
+  "files": ["server", "icon.png", "manifest.json", "server.json", "README.md", "LICENSE"],
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node --test test/*.test.mjs",
+    "bundle": "mcpb pack . followproof.mcpb"
+  },
+  "dependencies": {
+    "mcp-remote": "0.14.2"
+  },
+  "devDependencies": {
+    "@anthropic-ai/mcpb": "2.1.2"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Followproof",
+  "license": "MIT",
+  "homepage": "https://followproof.com/developers/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/followproof/mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/followproof/mcp-server/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": ["mcp", "model-context-protocol", "claude", "followproof", "influencer-audit", "influencer-vetting", "influencer-marketing", "audience-quality", "engagement-rate", "creator-due-diligence"],
+  "mcpName": "io.github.followproof/mcp-server",
+  "overrides": {
+    "tmp": "^0.2.6"
+  }
+}

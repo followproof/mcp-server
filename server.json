@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.followproof/mcp-server",
+  "title": "Influencer audience check by Followproof",
+  "description": "Influencer audit: check a creator's audience quality and engagement rate, compare, find by niche.",
+  "repository": {
+    "url": "https://github.com/followproof/mcp-server",
+    "source": "github"
+  },
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "followproof-mcp",
+      "version": "1.0.0",
+      "transport": { "type": "stdio" }
+    }
+  ],
+  "remotes": [
+    { "type": "streamable-http", "url": "https://followproof.com/mcp" }
+  ]
+}

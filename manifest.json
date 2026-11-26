@@ -1,0 +1,32 @@
+{
+  "manifest_version": "0.3",
+  "name": "followproof",
+  "display_name": "Influencer audience check by Followproof",
+  "version": "1.0.0",
+  "description": "Influencer audit and vetting: MCP connector for Followproof. Check audience quality and engagement rate for Instagram, TikTok and YouTube creators, compare creators and find new ones by niche.",
+  "long_description": "Influencer audit and influencer vetting before you pay a creator. check_creator runs an audience quality check with the signals behind it, an engagement rate check against same-size accounts, posting cadence and an estimated sponsored-post rate. get_creator_report adds peers, sponsored posts and earnings for creator due diligence; compare_creators puts finalists side by side; search_creators finds creators by niche, size and country; saved lists keep your shortlist. Everything uses your Followproof plan's allowance.",
+  "author": {
+    "name": "Followproof",
+    "url": "https://followproof.com"
+  },
+  "homepage": "https://followproof.com/developers/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/followproof/mcp-server"
+  },
+  "icon": "icon.png",
+  "server": {
+    "type": "node",
+    "entry_point": "server/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": ["${__dirname}/server/index.js"]
+    }
+  },
+  "compatibility": {
+    "platforms": ["darwin", "win32", "linux"],
+    "runtimes": { "node": ">=22" }
+  },
+  "privacy_policies": ["https://followproof.com/privacy/"],
+  "license": "MIT"
+}
